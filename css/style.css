@@ -1,0 +1,94 @@
+:root {
+    --primary-color: #605DEC;
+    --secondary-color: #6E7491;;
+    --third-color: #7C8DB0;
+    --white-color: white;
+    --text-color: #0e0d0d96;
+    --text-gray: #999;
+    --black-color: black;
+    --primary-font: 'Nunito Sans', sans-serif;
+}
+
+
+h4 {
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+h5 {
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+p {
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.main-btn {
+    background: var(--primary-color);
+    color: var(--white-color);
+    border: 1px solid var(--primary-color);
+    padding: 4px 18px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: 0.6s ease-in-out;
+    font-family: var(--primary-font);
+}
+
+.main-btn:hover {
+    background: var(--white-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+span{
+    color: var(--primary-color);
+}
+
+
+/* ========================
+        Header Design
+=========================*/
+.navbar-nav .nav-item .nav-link {
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--third-color);
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+    color: var(--primary-color);
+}
+
+.active {
+    color: var(--primary-color);
+}
+
+.signIn {
+    cursor: pointer;
+}
+
+/* ====================
+    Sign UP Modal
+=======================*/
+.signup {
+    color: var(--third-color);
+}
+
+.signup h4{
+    font-size: 24px;
+    color: var(--secondary-color);
+}
+
+.signup p{
+    font-size: 18px;
+    color: var(--third-color)
+}

@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Travelo</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+    <!-- own css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Flight</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hotels</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Packages</a>
+                        </li>
+
+
+                        <!-- Sign In model button -->
+                        <li class="nav-item">
+                            <a class="nav-link signIn" class="nav-link" data-bs-toggle="modal" data-bs-target="#signInModel">Sign In</a>
+                        </li>
+
+                        <!-- Button trigger Sign Up modal -->
+                        <button type="button" class="main-btn ms-4" data-bs-toggle="modal" data-bs-target="#signupModel">
+                            Sign Up
+                        </button>
+
+
+                        <!-- Sign up Modal -->
+                        <div class="modal fade" id="signInModel" tabindex="-1" aria-labelledby="signInModelLable" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body p-4 signup">
+                                        <div class="d-flex justify-content-between">
+                                            <h4>Sign In for Tripma</h4>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <p>Tripma is totaly free to use, Sign up using your email address or phone number below to get started.
+                                        </p>
+                        
+                                        <div class="signup__form">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <input type="text" placeholder="Email or Username" class="form-control" id="email" required>
+                                                </div>
+                        
+                                                <div class="mb-3">
+                                                    <input type="password" placeholder="Password" class="form-control" id="exampleInputEmail1"
+                                                        required>
+                                                </div>
+                        
+                                                <div class="mb-3 form-check">
+                                                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                                                    <label class="form-check-label" for="rememberMe">Remember Me</label>
+                                                </div>
+                        
+                        
+                                                <button class="w-100 main-btn" type="submit">Sign In</button>
+                        
+                                            </form>
+                                        </div>
+                        
+                                    </div>
+                        
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sign up Modal -->
+                        <div class="modal fade" id="signupModel" tabindex="-1" aria-labelledby="signupModellabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body p-4 signup">
+                                        <div class="d-flex justify-content-between">
+                                            <h4>Sign up for Tripma</h4>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <p>Tripma is totaly free to use, Sign up using your email address or phone number below to get started.</p>
+
+                                        <div class="signup__form">
+                                            <form>
+
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-12">
+                                                        <div class="mb-3">
+                                                            <input type="text" placeholder="First Name" class="form-control" id="firstName" required>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-6 col-12">
+                                                        <div class="mb-3">
+                                                            <input type="text" placeholder="Last Name" class="form-control" id="lastName" required>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <input type="text" placeholder="Email or Username" class="form-control" id="email" required>
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <input type="password" placeholder="Password" class="form-control" id="exampleInputEmail1" required>
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label for="formFile" class="form-label">Profile Picture</label>
+                                                    <input class="form-control" type="file" id="formFile">
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-12">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Birthday</label>
+                                                            <input type="date" placeholder="Date of birth" class="form-control" id="date" required>
+                                                        </div>
+                                                    </div>
+                                                
+                                                    <div class="col-lg-6 col-12">
+                                                        <div class="mb-3">
+                                                            <label for="" class="form-label">Nid Number</label>
+                                                            <input type="text" class="form-control" id="lastName" required>
+                                                        </div>
+                                                    </div>
+                                                
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="" class="form-label">Address</label>
+                                                    <textarea name="" cols="30" rows="2" class="form-control"></textarea>
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <input type="number" placeholder="Phone Number" class="form-control" id="phone" required>
+                                                </div>
+
+                                                
+                                                <div class="mb-3 form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">I agree to <span><a href="#">Terms & Conditions</a></span></label>
+                                                </div>
+
+                                                <div class="mb-3 form-check">
+                                                    <input type="checkbox" class="form-check-input" id="newsletter">
+                                                    <label class="form-check-label" for="newsletter">Send me the latest deal alets</label>
+                                                </div>
+
+                                                <button class="w-100 main-btn" type="submit">Create Account</button>
+
+                                            </form>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
