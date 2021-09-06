@@ -53,6 +53,7 @@ span{
 }
 
 
+
 /* ========================
         Header Design
 =========================*/
@@ -69,7 +70,7 @@ span{
 }
 
 .active {
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
 }
 
 .signIn {
@@ -91,4 +92,40 @@ span{
 .signup p{
     font-size: 18px;
     color: var(--third-color)
+}
+
+
+/* ====================
+        Hero Section
+=======================*/
+#hero {
+    background: linear-gradient(0deg, rgb(0 0 0 / 0%), rgb(0 0 0 / 57%)), url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero {
+    padding: 150px 0;
+}
+
+.hero h1 {
+    color: var(--white-color);
+    font-size: 66px;
+    font-family: var(--primary-font);
+    line-height: 56px;
+    font-weight: 700;
+    margin-bottom: 69px;
+}
+
+.search__form {}
+
+.search__form  .form-control {
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.search__form  .input-group-text {
+    background: none !important;
+    border: none !important;
+
 }
