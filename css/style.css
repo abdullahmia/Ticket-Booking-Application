@@ -15,6 +15,7 @@ h4 {
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
+    color: var(--secondary-color);
 }
 
 h5 {
@@ -22,6 +23,7 @@ h5 {
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
+    color: var(--secondary-color);
 }
 
 p {
@@ -29,6 +31,11 @@ p {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
+    color: var(--secondary-color);
+}
+
+a {
+    text-decoration: none;
 }
 
 .main-btn {
@@ -50,6 +57,18 @@ p {
 
 span{
     color: var(--primary-color);
+}
+.modal-animation {
+  transform:matrix(0.866,0.5,-0.5,0.866,0,0);
+  opacity: 0;
+  transition: 0.4s all 0s;
+}
+
+.modal-animation.show {
+    opacity: 1;
+    /* transform: scale(1)!important; */
+    transform:matrix(0.866,0.5,-0.5,0.866,0,0);
+    transform:none;
 }
 
 
@@ -128,4 +147,16 @@ span{
     background: none !important;
     border: none !important;
 
+}
+
+/* ========================
+        Hotels section
+=========================*/
+.hotels .card {
+    border-radius: 15px;
+}
+
+.hotels .card img {
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
 }
