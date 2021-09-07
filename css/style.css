@@ -58,6 +58,11 @@ a {
 span{
     color: var(--primary-color);
 }
+
+ul {
+    list-style: none;
+}
+
 .modal-animation {
   transform:matrix(0.866,0.5,-0.5,0.866,0,0);
   opacity: 0;
@@ -159,4 +164,31 @@ span{
 .hotels .card img {
    border-top-left-radius: 15px;
    border-top-right-radius: 15px;
+}
+
+
+
+/* ========================
+        Review section
+=========================*/
+
+.review h5 {
+    line-height: 0px;
+}
+.review p {
+    line-height: 23px;
+}
+
+/* ========================
+        Footer section
+=========================*/
+
+footer ul li a{
+    color: var(--secondary-color);
+}
+
+
+.footer_bottom a {
+    font-size: 20px;
+    color: var(--secondary-color);
 }
